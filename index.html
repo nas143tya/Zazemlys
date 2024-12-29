@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр "Заземлись"</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+           @font-face {
+            font-family: 'UbuntuMedium';
+            src: url('UbuntuSansMono-Medium.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'UbuntuRegular';
+            src: url('./UbuntuSansMono-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'UbuntuMedium', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./png/logo.png" alt="Логотип">
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#staff">Персонал</a>
+        <a href="#bid">Оставить заявку</a>
+        <a href="#review">Отзывы</a>
+        <a href="#contacts" style="background-color: #D9D9D9; border-radius: 20px; padding: 5px 10px 5px 10px;">Контакты</a>
+    </nav>
+</header>
+<div class="container">
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1>О нас</h1>
+            <p>Центр реабилитации мечтателей «Заземлись» предназначен для поддержки людей, которые часто погружаются в мир фантазий, мешающий им адаптироваться к реалиям жизни.<br><br>Наша цель — помочь участникам обрести баланс между мечтами и реальностью и научить их трезво оценивать свои возможности.</p>
+        </div>
+      
+    </section>
+
+    <section id="staff">
+        <h2 class="staff_heading">Наш персонал</h2>
+        <div class="staff">
+            <div class="staff-member">
+                <img src="./png/pers1.png" alt="Сотрудник 1">
+                <p>Иван Иванов</p>
+                <p class="second-text">Помогает клиентам 
+                    ставить реалистичные цели, 
+                    разбивая их на шаги.</p>
+            </div>
+            <div class="staff-member">
+                <img src="./png/pers2.png" alt="Сотрудник 2">
+                <p>Анна Смирнова</p>
+                <p class="second-text">Поддерживает эмоциональное 
+                    здоровье клиентов, помогает 
+                    справляться со страхами.</p>
+            </div>
+            <div class="staff-member">
+                <img src="./png/pers3.png" alt="Сотрудник 3">
+                <p>Ольга Петрова</p>
+                <p class="second-text">Проводит занятия и тренинги,
+                    развивает навыки 
+                    самоорганизации и мотивации.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bid" class="bid">
+        <h2 class="bid_heading">ОСТАВИТЬ ЗАЯВКУ</h2>
+        <div class="bid_main-block">
+            <form method="post" class="bid_main-block_form">
+                <div class="bid_main-block_form_name">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" required="" class="type">
+                </div>
+                <div class="bid_main-block_form_name">
+                    <label for="secondname">Фамилия</label>
+                    <input type="text" name="secondname" required="" class="type">
+                </div>
+                <div class="bid_main-block_form_name">
+                    <label for="phone">Телефон</label>
+                    <input type="text" name="phone" required="" class="type">
+                </div>
+                <div class="bid_main-block_form_name">
+                    <div style="display: flex; gap:10px; align-items: baseline;"><input type="radio" name="choice" value="Согласен(-а) с условиями оферты"><p>Согласен(-а) с условиями оферты</p></div>
+                    <button type="submit" class="submit">Отправить</button> 
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+        <h2 class="review_heading">ОТЗЫВЫ</h2>
+        <div class="review_main-block">
+            <div class="review_main-block_block">
+                <div class="review_main-block_block_name">
+                    <p>МАРИЯ</p>
+                    <div>
+                        <img src="./png/star.png">
+                        <img src="./png/star.png">
+                        <img src="./png/star.png">
+                        <img src="./png/star.png">
+                        <img src="./png/star.png">
+                    </div>
+                </div>
+                <p>Заботливый и профессиональный коллектив, уютная атмосфера 
+                    и качественные программы. 
+                    Я почувствовала, что наконец-то вернулась к себе. Большое спасибо 
+                    всем сотрудникам!</p>
+            </div>
+            <div class="review_main-block_block">
+                <div class="review_main-block_block_name">
+                    <p>ИРИНА</p>
+                    <div>
+                        <img src="./png/star.png">
+                        <img src="./png/star.png">
+                        <img src="./png/star.png">
+                        <img src="./png/star.png">
+                        <img src="./png/nostar.png">
+                    </div>
+                </div>
+                <p>Здесь я смогла избавиться 
+                    от давления и стресса, которые копились долгое время. 
+                    В центре очень грамотные специалисты и люди, которые помогают вам найти свой путь. Спасибо вам!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <h2 class="contacts_heading">КОНТАКТЫ</h2>
+        <div class="contacts_main-block">
+            <p>Ул. Реалистов, 13Б<br>
+                +7 (927) 723 29 47</p>
+            <img src="./png/line.png">
+            <p>zazemlys@gmail.com </p>
+        </div>
+    </section>
+</div>
+    
+</body>
+</html>
